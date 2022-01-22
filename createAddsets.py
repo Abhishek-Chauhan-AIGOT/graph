@@ -12,9 +12,10 @@ fields = [
 ]
 params = {
   'name': 'My Python AdSet',
+  'daily_budget': 10, 
   'lifetime_budget': '0',
-  'start_time': '2022-1-17T11:46:57-0800',
-  'end_time': '2022-2-24T11:46:57-0800',
+  'start_time': 'ENTER START DATE HERE',    
+  'end_time': 'ENTER END DATE HERE',
   'campaign_id': 'campaign-id',
   'bid_amount': '1370',
   'billing_event': 'IMPRESSIONS',
@@ -34,5 +35,5 @@ params = {
     'status': 'PAUSED',
 }
 
-print(AdAccount(id).create_ad_set(fields=fields, params=params,))
+print(AdAccount(id).create_ad_set(fields=fields, params=params))
 
